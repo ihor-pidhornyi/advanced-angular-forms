@@ -89,11 +89,11 @@ select {
   width: 100%;
 }
 
-.ng-valid.ng-dirty:not(form, [ngModelGroup]) {
+.ng-valid.ng-dirty:not(form, [ngModelGroup], [formGroupName], [formArrayName]) {
   border: 1px solid var(--color-success)
 }
 
-.ng-invalid.ng-dirty:not(form, [ngModelGroup="address"]) {
+.ng-invalid.ng-dirty:not(form, [ngModelGroup="address"], [formGroupName="address"], [formArrayName]) {
   border: 1px solid var(--color-error)
 }
 
